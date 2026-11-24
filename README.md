@@ -4,7 +4,8 @@ Personal portfolio, deployed with GitHub Pages.
 
 ## Local preview
 
-Open `index.html` in a browser. The page is static and needs no build step.
+Open `index.html` in a browser or use any static file server. There is no
+build step; the scroll reveals and progress bar are vanilla JavaScript.
 
 ## Custom domain
 

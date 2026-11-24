@@ -3,125 +3,174 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#10110f">
+    <meta name="theme-color" content="#090909">
     <meta
       name="description"
-      content="Portfolio vn0j — programowanie, systemy i eksperymentalne projekty open source."
+      content="vn0j — programuję, eksperymentuję i buduję projekty open source."
     >
-    <title>vn0j — Developer</title>
+    <title>vn0j — Programuję to, co pod maską</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <a class="wordmark" href="#start" aria-label="vn0j — strona główna">
-          vn0j<span class="wordmark-dot">.</span>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="wordmark" href="#start" aria-label="vn0j — początek strony">vn0j<span>.</span></a>
+      <nav class="site-nav" aria-label="Nawigacja główna">
+        <a href="#o-mnie">O mnie</a>
+        <a href="#podejscie">Podejście</a>
+        <a href="#projekty">Projekty</a>
+        <a class="nav-cta" href="https://github.com/vn0j" target="_blank" rel="noreferrer">
+          GitHub <span aria-hidden="true">↗</span>
         </a>
-        <nav class="site-nav" aria-label="Nawigacja główna">
-          <a href="#o-mnie">O mnie</a>
-          <a href="#projekty">Projekty</a>
-          <a class="nav-contact" href="https://github.com/vn0j">GitHub <span aria-hidden="true">↗</span></a>
-        </nav>
-      </header>
+      </nav>
+    </header>
 
-      <main>
-        <section class="hero" id="start" aria-labelledby="hero-title">
-          <div class="hero-copy">
-            <p class="eyebrow"><span class="status-dot"></span> PROGRAMOWANIE • CIEKAWOŚĆ • OPEN SOURCE</p>
-            <h1 id="hero-title">Hej, jestem <span>vn0j</span>.<br>Buduję rzeczy, które<br><span class="hero-accent">działają pod maską.</span></h1>
-            <p class="hero-description">
-              Programuję, eksperymentuję i uczę się, rozbierając technologię na części.
-              Najbardziej ciekawią mnie systemy, translacja kodu i grafika.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#projekty">Zobacz projekty <span aria-hidden="true">↓</span></a>
-              <a class="button button-quiet" href="https://github.com/vn0j">Mój GitHub <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="hero-art" aria-hidden="true">
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
-            <div class="orbit orbit-three"></div>
-            <div class="orbit-core"><span>v<span class="core-dot">.</span></span></div>
-            <span class="art-label art-label-top">IDEAS → CODE</span>
-            <span class="art-label art-label-bottom">KEEP EXPLORING</span>
-            <span class="art-cross cross-one">+</span>
-            <span class="art-cross cross-two">+</span>
-          </div>
-          <div class="hero-index"><span>01</span> / 03 <span class="index-line"></span> PRZEWIŃ NIŻEJ</div>
-        </section>
+    <main>
+      <section class="hero" id="start" aria-labelledby="hero-title">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <p class="eyebrow hero-eyebrow"><span></span> DEVELOPER · CIEKAWOŚĆ · OPEN SOURCE</p>
+        <h1 id="hero-title">Lubię wiedzieć,<br>co jest <span>pod maską.</span></h1>
+        <p class="hero-lede">
+          Hej, jestem vn0j. Piszę kod, sprawdzam jak działa technologia
+          i buduję rzeczy, które pozwalają zajrzeć głębiej.
+        </p>
+        <a class="scroll-cue" href="#o-mnie">
+          <span class="scroll-mouse" aria-hidden="true"><i></i></span>
+          <span>PRZEWIŃ, ZOBACZ</span>
+          <span class="scroll-arrow" aria-hidden="true">↓</span>
+        </a>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-grid"></div>
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="orbit orbit-c"></div>
+          <div class="orbit-core"><span>v<span>.</span></span></div>
+          <span class="art-coordinate coordinate-one">51°30'26.4"N</span>
+          <span class="art-coordinate coordinate-two">CODE / CURIOSITY</span>
+          <span class="art-cross cross-one">+</span>
+          <span class="art-cross cross-two">+</span>
+        </div>
+        <span class="hero-index">SCROLL TO EXPLORE <span>01 — 04</span></span>
+      </section>
 
-        <section class="intro section-grid" id="o-mnie" aria-labelledby="about-title">
-          <div class="section-label"><span>01</span> O MNIE</div>
-          <div class="intro-content">
-            <h2 id="about-title">Lubię wiedzieć,<br>co dzieje się <em>naprawdę.</em></h2>
-            <div class="intro-columns">
+      <section class="story section-pad" id="o-mnie" aria-labelledby="story-title">
+        <div class="section-kicker reveal"><span>01</span> TROCHĘ O MNIE</div>
+        <div class="story-copy reveal">
+          <h2 id="story-title">Najciekawsze rzeczy<br>zaczynają się tam,<br>gdzie kończy się <em>interfejs.</em></h2>
+          <p>
+            Interesuje mnie to, czego zwykle nie widać: systemy, sprzęt i kod,
+            który spina wszystko w całość. Zamiast tylko czytać o technologii,
+            wolę samemu sprawdzić, jak działa.
+          </p>
+        </div>
+        <div class="story-aside reveal">
+          <span class="aside-mark" aria-hidden="true">↘</span>
+          <p>Małe eksperymenty.<br>Dużo pytań.<br>Kod, który coś odkrywa.</p>
+        </div>
+        <span class="section-watermark" aria-hidden="true">01</span>
+      </section>
+
+      <section class="approach section-pad" id="podejscie" aria-labelledby="approach-title">
+        <div class="section-kicker reveal"><span>02</span> JAK LUBIĘ BUDOWAĆ</div>
+        <div class="approach-heading reveal">
+          <h2 id="approach-title">Od ciekawości<br>do <em>działającego kodu.</em></h2>
+          <p>Najpierw pytanie. Potem prototyp. Na końcu — zrozumienie, co dzieje się naprawdę.</p>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step-number">01 / OBSERWUJ</span>
+            <div class="step-symbol symbol-scan" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h3>Zadaję pytania.</h3>
+            <p>Co jest pod spodem? Gdzie przebiega granica? Co się stanie, jeśli ją przekroczę?</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-number">02 / ROZBIERAJ</span>
+            <div class="step-symbol symbol-code" aria-hidden="true">&lt;<i>/</i>&gt;</div>
+            <h3>Schodzę warstwę niżej.</h3>
+            <p>Od interfejsu do systemu. Od instrukcji do działania. Bez zgadywania.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-number">03 / SKŁADAJ</span>
+            <div class="step-symbol symbol-orbit" aria-hidden="true"><i></i><i></i><b>+</b></div>
+            <h3>Buduję i sprawdzam.</h3>
+            <p>Najlepszy sposób na naukę? Zrobić to samemu i zobaczyć, co naprawdę działa.</p>
+          </article>
+        </div>
+        <div class="terminal reveal" aria-label="Przykład projektu Stela">
+          <div class="terminal-top">
+            <span class="terminal-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>vn0j / stela / concept</span>
+            <span class="terminal-language">PROJECT NOTES</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-lines" aria-hidden="true"><span>01</span><span>02</span><span>03</span><span>04</span></div>
+            <pre><code><span class="code-muted">// pomysł → system → eksperyment</span>
+translator <span class="code-muted">/</span> <span class="code-accent">ARM64</span> <span class="code-muted">→</span> x86_64
+graphics   <span class="code-muted">/</span> <span class="code-accent">Metal</span> <span class="code-muted">→</span> NVIDIA
+firmware   <span class="code-muted">/</span> UEFI</code></pre>
+          </div>
+          <div class="terminal-bottom"><span>NOTATKI DO PROJEKTU</span><span>STELA / OPEN SOURCE <b>↗</b></span></div>
+        </div>
+        <span class="section-watermark" aria-hidden="true">02</span>
+      </section>
+
+      <section class="projects section-pad" id="projekty" aria-labelledby="projects-title">
+        <div class="section-kicker reveal"><span>03</span> RZECZY, KTÓRE BUDUJĘ</div>
+        <div class="projects-heading reveal">
+          <h2 id="projects-title">Projekty z<br><em>niższej warstwy.</em></h2>
+          <p>Eksperymenty na styku oprogramowania, sprzętu i systemów.</p>
+        </div>
+        <a class="project-card reveal" href="https://github.com/vn0j/Stela" target="_blank" rel="noreferrer">
+          <div class="project-index">WYBRANY PROJEKT <span>01 / 01</span></div>
+          <div class="project-main">
+            <div class="project-title">
+              <span class="project-kicker">TRANSLACJA · SYSTEMY · OPEN SOURCE</span>
+              <h3>Stela<span>.</span></h3>
               <p>
-                Od kodu, który widać na ekranie, po warstwy ukryte głębiej —
-                najbardziej wciąga mnie odkrywanie, jak wszystko łączy się w całość.
+                Eksperymentalna warstwa dla komputerów x86-64.
+                Translacja ARM64, własny sterownik Metal dla kart NVIDIA
+                i odtworzenie sprzętu, którego oczekuje macOS.
               </p>
-              <p>
-                Najlepiej uczę się, budując. Tworzę projekty open source, testuję
-                pomysły i dzielę duże problemy na małe, które da się rozwiązać.
-              </p>
+              <span class="project-link">ZOBACZ NA GITHUBIE <b aria-hidden="true">↗</b></span>
             </div>
-            <div class="focus-list" aria-label="Obszary zainteresowań">
-              <span>Software</span>
-              <span>Systemy</span>
-              <span>Grafika</span>
-              <span>Open source</span>
+            <div class="project-art" aria-hidden="true">
+              <div class="project-grid"></div>
+              <div class="project-chip">S<span>.</span></div>
+              <span class="project-orbit project-orbit-one"></span>
+              <span class="project-orbit project-orbit-two"></span>
+              <span class="project-art-label">ARM64 → x86_64</span>
             </div>
           </div>
-        </section>
+          <div class="project-tags"><span>Rust</span><span>UEFI</span><span>Translacja kodu</span><span>Grafika</span></div>
+        </a>
+        <a class="all-projects reveal" href="https://github.com/vn0j" target="_blank" rel="noreferrer">
+          Zajrzyj do reszty na GitHubie <span aria-hidden="true">↗</span>
+        </a>
+        <span class="section-watermark" aria-hidden="true">03</span>
+      </section>
 
-        <section class="projects section-grid" id="projekty" aria-labelledby="projects-title">
-          <div class="section-label"><span>02</span> WYBRANE PROJEKTY</div>
-          <div class="projects-content">
-            <div class="projects-heading">
-              <h2 id="projects-title">Rzeczy, które<br><em>buduję.</em></h2>
-              <span class="project-count">01 PROJEKT</span>
-            </div>
-            <a class="project-card" href="https://github.com/vn0j/Stela">
-              <div class="project-topline">
-                <span class="project-type"><span class="project-spark">✳</span> OPEN SOURCE</span>
-                <span class="project-arrow" aria-hidden="true">↗</span>
-              </div>
-              <div class="project-main">
-                <div>
-                  <h3>Stela</h3>
-                  <p>
-                    Eksperymentalna warstwa kompatybilności dla komputerów x86-64:
-                    translacja ARM64, UEFI i własny model sprzętu.
-                  </p>
-                </div>
-                <div class="project-monogram" aria-hidden="true">S<span>.</span></div>
-              </div>
-              <div class="project-bottom">
-                <span>Rust</span><span>Systemy</span><span>Translacja kodu</span>
-              </div>
-            </a>
-            <a class="more-projects" href="https://github.com/vn0j">
-              Więcej na GitHubie <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </section>
-
-        <section class="contact" id="kontakt" aria-labelledby="contact-title">
-          <div class="contact-orb" aria-hidden="true"></div>
-          <p class="eyebrow"><span class="status-dot"></span> MASZ POMYSŁ? ZNAJDŹMY WSPÓLNY JĘZYK.</p>
-          <h2 id="contact-title">Zróbmy coś<br><em>ciekawego.</em></h2>
-          <a class="button button-light" href="https://github.com/vn0j">
-            Odezwij się na GitHubie <span aria-hidden="true">↗</span>
+      <section class="contact section-pad" id="kontakt" aria-labelledby="contact-title">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <div class="section-kicker reveal"><span>04</span> TERAZ TWOJA KOLEJ</div>
+        <div class="contact-copy reveal">
+          <h2 id="contact-title">Masz ciekawy<br>problem? <em>Chętnie.</em></h2>
+          <p>Rozmowa o systemach, kodzie albo nietypowym pomyśle zawsze mile widziana.</p>
+          <a class="contact-button" href="https://github.com/vn0j" target="_blank" rel="noreferrer">
+            ZNAJDŹ MNIE NA GITHUBIE <span aria-hidden="true">↗</span>
           </a>
-        </section>
-      </main>
+        </div>
+        <div class="contact-stamp" aria-hidden="true"><span>KEEP<br>LOOKING<br>DEEPER</span><b>v.</b></div>
+        <span class="section-watermark" aria-hidden="true">04</span>
+      </section>
+    </main>
 
-      <footer class="site-footer">
-        <a class="wordmark" href="#start">vn0j<span class="wordmark-dot">.</span></a>
-        <span>Projektuję, koduję, sprawdzam co się stanie.</span>
-        <a href="https://github.com/vn0j">GITHUB <span aria-hidden="true">↗</span></a>
-      </footer>
-    </div>
+    <footer class="site-footer">
+      <a class="wordmark" href="#start">vn0j<span>.</span></a>
+      <span>PROJEKTUJĘ · KODUJĘ · SPRAWDZAM</span>
+      <a href="https://github.com/vn0j" target="_blank" rel="noreferrer">GITHUB <span aria-hidden="true">↗</span></a>
+      <a class="back-top" href="#start" aria-label="Wróć na górę">↑</a>
+    </footer>
   </body>
 </html>
